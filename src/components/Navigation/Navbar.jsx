@@ -13,7 +13,7 @@ const Navbar = () => {
     <div className='z-4 flex fixed top-0 w-full items-start justify-between'>
       <div className="cursor-pointer p-1.5">
         <Link to="/" className="w-[15vw]  block">
-          <img  src='../../../public/fileok.png' alt='' className=''/>
+          <img  src='public/fileok.png' alt='' className=''/>
         </Link>
       </div>
 
@@ -39,5 +39,6 @@ const Navbar = () => {
 }
 
 export default Navbar
+
 
 
