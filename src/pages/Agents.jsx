@@ -35,7 +35,7 @@ const Agents = () => {
       trigger: imageDivRef.current,
       start: isMobile ? "top 10%" : "top -5%",
       end: isMobile ? "top -100%" : "top -157%",
-      scrub: true,
+
       pin: !isMobile, // Disable pinning on mobile for better performance
       pinSpacing: !isMobile,
       pinReparent: !isMobile,
@@ -136,5 +136,6 @@ const Agents = () => {
     </div>
   )
 }
+
 
 export default Agents
