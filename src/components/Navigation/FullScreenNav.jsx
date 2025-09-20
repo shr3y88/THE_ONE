@@ -7,7 +7,7 @@ const FullScreenNav = () => {
             <div className='flex w-full p-2 justify-between items-start'>
                 <div className="cursor-pointer ">
                     <Link to="/" className="w-[15vw]  block">
-                        <img src='../../../public/copy.jpg' alt='' className='' />
+                        <img src='public/copy.jpg' alt='' className='' />
                     </Link>
                 </div>
                 <div>
@@ -100,5 +100,6 @@ const FullScreenNav = () => {
         </div>
     )
 }
+
 
 export default FullScreenNav
