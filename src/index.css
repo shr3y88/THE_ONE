@@ -1,0 +1,74 @@
+@import "tailwindcss";
+@font-face {
+  font-family: font1;
+  src: url(../public/fonts/Lausanne-300.woff2);
+}
+@font-face {
+  font-family: font2;
+  src: url(../public/fonts/Lausanne-500.woff2);
+}
+@font-face {
+  font-family: font3;
+  src: url(../public/fonts/DripOctober-vm0JA.ttf);
+}
+
+/* Mobile-first responsive animations */
+.moveX{
+  animation-name:moveAnimation;
+  animation-duration: 8s;
+  animation-iteration-count:infinite ;
+  animation-timing-function: linear;
+}
+
+.moveLink{
+  opacity: 0;
+  transition: all ease 0.2s;
+}
+
+/* Touch-friendly hover effects */
+.link:hover .moveLink,
+.link:active .moveLink{
+  opacity: 1;
+}
+
+/* Mobile touch interactions */
+@media (hover: none) and (pointer: coarse) {
+  .link:active .moveLink {
+    opacity: 1;
+  }
+  
+  /* Reduce animation on mobile for better performance */
+  .moveX {
+    animation-duration: 6s;
+  }
+}
+
+@keyframes moveAnimation{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
+
+/* Smooth scrolling for better mobile experience */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent horizontal scroll on mobile */
+body {
+  overflow-x: hidden;
+}
+
+/* Better touch targets for mobile */
+@media (max-width: 768px) {
+  .link {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+
