@@ -32,12 +32,12 @@ const Agents = () => {
       trigger: imageDivRef.current,
       start: "top -5%",
       end: "top -157%",
-      scrub: true,
+      scrub: 1,
       pin: true,
       pinSpacing: true,
       pinReparent: true,
       pinType: "transform",
-      scrub: 1,
+     
 
       onUpdate: (Elem) => {
         let imageIndex;
@@ -131,5 +131,6 @@ const Agents = () => {
     </div>
   )
 }
+
 
 export default Agents
